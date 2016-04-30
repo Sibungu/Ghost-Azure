@@ -3,36 +3,118 @@
 
 {{! The big featured header }}
 <header id="header" class="{{#if @blog.cover}}">
+    <img src="assets/images/logo.png" height="80" width="116" alt="Grupo Decore" >
     <h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
     {{navigation}}
 </header>
 
 <!-- Banner -->
 <section id="banner" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <img src="assets/images/logo.png" height="134" width="194" alt="Logo Grupo Decore">
     <h2>{{@blog.description}}</h2>
+</section>
+
+<!-- Sección ¿Quienes Somos? -->
+<section id="nosotros" class="wrapper style1 align-center" style="background: url(assets/images/texturas/dark_mosaic.png)">
+<!--     style="background-color: #459a65"> -->
+    <div class="container">
+        <header>
+            <h2>¿Quiénes somos?</h2>
+        </header>
+            <p>Somos una empresa innovadora en los procesos de DEMOLICIÓN, CONSTRUCCIÓN Y REMODELACIÓN  INTEGRAL, diseñando, creando, o implementando  procesos de innovación tecnológica ambientalmente sustentable para preservar el entorno, garantizando la calidad  y seguridad de todos los proyectos, reduciendo  tiempos, costos e impacto ambiental.
+            </p>
+        </div>
+    </div>
 </section>
 
 <!-- One -->
 <section id="one" class="wrapper style1 align-center">
     <div class="container">
         <header>
-            <h2>¿Qué podemos hacer por ti?</h2>
-            <p>Estas son algunas de las cosas que podemos hacer por ti...</p>
+            <h2>Servicios</h2>
         </header>
         <div class="row 200%">
             <section class="4u 12u$(small)">
-                <i class="icon big rounded fa-clock-o"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quam consectetur quibusdam magni minus aut modi aliquid.</p>
+                <img src="assets/images/construccion.png" alt="">
+                <p>Construcción</p>
             </section>
             <section class="4u 12u$(small)">
-                <i class="icon big rounded fa-comments"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ullam consequatur repellat debitis maxime molestiae.</p>
+                <img src="assets/images/demolicion.png" alt="">
+                <p>Demolición</p>
             </section>
-            <section class="4u$ 12u$(small)">
-                <i class="icon big rounded fa-user"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eaque eveniet, nesciunt molestias. Ipsam, voluptate vero.</p>
+            <section class="4u 12u$(small)">
+                <img src="assets/images/remodelacion.png" alt="">
+                <p>Remodelación</p>
             </section>
         </div>
+        <button style="background:#e67e22;
+    color:#fff;
+    display:inline-block;
+    font-size:1.25em;   
+    padding:10px 0;
+    width:200px;
+    border: none;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">Ver Mas...</button>
+    </div>
+</section>
+
+<!-- Seccion de Misión -->
+<section id="mision" class="wrapper style1 align-center" style="background: url(assets/images/texturas/diagmonds.png)">
+    <div class="container">
+        <div class="row">
+        <section class="6u 12u$(small)">
+            <h2>Misión</h2>
+                <p>“Inspirar en cada proyecto el diseño de innovación tecnológica sustentable para preservar el entorno, garantizando la calidad y la seguridad.”</p>
+        </section>
+        <section class="6u 12u$(small)">
+            <h2>Visión</h2>
+                <p>“Ser la empresa líder en servicios de Demolición, Construcción  y Remodelación diseñando, empleando, creando o implementando procesos de innovación tecnológica ambientalmente sustentables para preservar el entorno, garantizando la calidad y seguridad de todos los proyectos, reduciendo tiempos, costos e impacto ambiental en base a la planeación.”</p>
+        </section>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Valores -->
+<section id="valores" class="wrapper style1 align-center" style="background: url(assets/images/texturas/dark_mosaic.png)">
+    <div class="container">
+        <header>
+            <h2>Valores</h2>
+            <li>REGALAR UN SALUDO DE GRAN IMPACTO A NUESTROS CLIENTES.</li>
+            <li>DEBEMOS SER AVENTUREROS, CURIOSOS, INNOVADORES CREATIVOS Y AUTOSUSTENTABLES.</li>
+            <li>LOS TRABAJOS SE DEBEN REALIZAR EN GRUPO CON CALIDAD PRONTITUD, HONESTIDAD Y SEGURIDAD PORQUE DE ELLO DEPENDE EL ÉXITO DEL GRUPO.</li>
+        </header>
+        </div>
+</section>
+
+<!-- Clientes -->
+
+<section id="clientes" class="wrapper style2 align-center" style="background-color: #459a65">
+    <div class="container">
+        <header>
+            <h2>Clientes</h2>
+        </header>
+    <div class="row 200%">
+        <section class="3u 6u(medium) 12u$(small)">
+            <img src="assets/images/clientes/logo-walmart.png" alt="">
+        </section>
+        <section class="3u 6u(medium) 12u$(small)">
+            <img src="assets/images/clientes/suburbia.png" >
+        </section>
+        <section class="3u 6u(medium) 12u$(small)">
+            <img src="assets/images/clientes/goldcorp.png" alt="">
+        </section>
+        <section class="3u 6u(medium) 12u$(small)">
+            <img src="assets/images/clientes/plazalasflores.png">
+        </section>
+    </div>
+    <div class="row">
+        <section class="6u 6u(medium) 12u$(small)">
+            <img src="assets/images/clientes/bbva.jpg" alt="">
+        </section>
+        <section class="6u 6u(medium) 12u$(small)">
+            <img src="assets/images/clientes/iaepsa.png">
+        </section>
+    </div>
     </div>
 </section>
 
@@ -40,8 +122,8 @@
 <section id="two" class="wrapper style2 align-center">
     <div class="container">
         <header>
-            <h2>Portfolio</h2>
-            <p>Recently finished projects.</p>
+            <h2>Blog</h2>
+            <p>Observe algunos de nuestros casos de éxito</p>
         </header>
         <div class="row">
             {{! The tag below includes the post loop - partials/loop.hbs }}

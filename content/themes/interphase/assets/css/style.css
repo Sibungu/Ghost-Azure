@@ -23,7 +23,7 @@
 	}
 
 	a {
-		color: #4dac71;
+		color: #276419;
 		text-decoration: underline;
 	}
 
@@ -241,8 +241,8 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4dac71;
-			box-shadow: 0 0 0 1px #4dac71;
+			border-color: #276419;
+			box-shadow: 0 0 0 1px #276419;
 		}
 
 	.select-wrapper {
@@ -353,8 +353,8 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #4dac71;
-			box-shadow: 0 0 0 1px #4dac71;
+			border-color: #276419;
+			box-shadow: 0 0 0 1px #276419;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -434,7 +434,7 @@
 
 		.icon.rounded {
 			border-radius: 100%;
-			border: 1px solid #4dac71;
+			border: 1px solid #276419;
 			display: inline-block;
 			height: 2em;
 			line-height: 2em;
@@ -825,7 +825,7 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #4dac71;
+			background-color: #276419;
 			color: #ffffff !important;
 		}
 
@@ -1001,12 +1001,8 @@
 	}
 
 		.wrapper.style1 {
-			background-color: #3ba666;
-			-moz-background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
-			-webkit-background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
-			-o-background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
-			-ms-background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
-			background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
+			background: rgba(47,47,47,0.8);
+            background-image: url(../images/texturas/stardust.png);
 			color: #ffffff;
 		}
 
