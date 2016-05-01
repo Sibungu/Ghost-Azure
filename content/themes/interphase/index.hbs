@@ -2,18 +2,17 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 {{! The big featured header }}
 <header id="header" class="{{#if @blog.cover}}">
-    <img src="assets/images/logo.png" height="80" width="116" alt="Grupo Decore" >
+    <img src="{{asset "images/logo_header.png"}}" alt="Grupo Decore">
     <h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
     {{navigation}}
 </header>
 <!-- Banner -->
 <section id="banner" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
-    <img src="assets/images/logo.png" height="134" width="194" alt="Logo Grupo Decore">
+    <img src="{{asset "images/logo.png"}}" alt="Logo Grupo Decore">
     <h2>{{@blog.description}}</h2>
 </section>
 <!-- Sección ¿Quienes Somos? -->
-<section id="nosotros" class="wrapper style1 align-center" style="background: url(assets/images/texturas/dark_mosaic.png)">
-    <!--     style="background-color: #459a65"> -->
+<section id="nosotros" class="wrapper style1 align-center" style="background: url({{asset "/images/texturas/dark_mosaic.png"}}")>
     <div class="container">
         <header>
             <h2>¿Quiénes somos?</h2>
@@ -25,26 +24,26 @@
 </section>
 
 <!-- One -->
-<section id="one" class="wrapper style1 align-center" style="background: url(assets/images/texturas/crossed_stripes.png)">
+<section id="one" class="wrapper style1 align-center" style="background: url({{asset "/images/texturas/crossed_stripes.png"}}")>
 <div class="container">
     <header>
         <h2>Servicios</h2>
     </header>
     <div class="row 200%">
         <section class="4u 6u(medium) 12u$(small)">
-            <img src="assets/images/construccion.png" alt="">
+            <img src="{{asset "images/construccion.png"}}" alt="Construcción">
             <p>Construcción</p>
         </section>
         <section class="4u 6u(medium) 12u$(small)">
-            <img src="assets/images/demolicion.png" alt="">
+            <img src="{{asset "images/demolicion.png"}}" alt="Demolición">
             <p>Demolición</p>
         </section>
         <section class="4u 12u(medium) 12u$(small)">
-            <img src="assets/images/remodelacion.png" alt="">
+            <img src="{{asset "images/remodelacion.png"}}" alt="Remodelación">
             <p>Remodelación</p>
         </section>
     </div>
-    <button style="background:#e67e22;
+    <button href="#" style="background:#e67e22;
     color:#fff;
     display:inline-block;
     font-size:1.25em;
@@ -55,7 +54,7 @@
 </div>
 </section>
 <!-- Seccion de Misión -->
-<section id="mision" class="wrapper style1 align-center" style="background: url(assets/images/texturas/diagmonds.png)">
+<section id="mision" class="wrapper style1 align-center" style="background: url({{asset "images/texturas/diagmonds.png"}}")>
 <div class="container">
     <div class="row">
         <section class="6u 6u(medium) 12u$(small)">
@@ -70,7 +69,7 @@
 </div>
 </section>
 <!-- Sección Valores -->
-<section id="valores" class="wrapper style1 align-center" style="background: url(assets/images/texturas/dark_mosaic.png)">
+<section id="valores" class="wrapper style1 align-center" style="background: url({{asset "images/texturas/dark_mosaic.png"}}")>
 <div class="container">
     <header>
         <h2>Valores</h2>
@@ -89,24 +88,24 @@
 <div class="container">
     <div class="row 200%">
         <section class="3u 6u(medium) 12u$(small)">
-            <img src="assets/images/clientes/goldcorp.png" alt="">
+            <img src="{{asset "images/clientes/goldcorp.png"}}" alt="Goldcorp">
         </section>
         <section class="3u 6u(medium) 12u$(small)">
-            <img src="assets/images/clientes/logo-walmart.png" alt="">
+            <img src="{{asset "images/clientes/logo-walmart.png"}}" alt="Walmart">
         </section>
         <section class="3u 6u(medium) 12u$(small)">
-            <img src="assets/images/clientes/suburbia.png" >
+            <img src="{{asset "images/clientes/suburbia.png"}}" alt="Suburbia">
         </section>
         <section class="3u 6u(medium) 12u$(small)">
-            <img src="assets/images/clientes/plazalasflores.png">
+            <img src="{{asset "images/clientes/plazalasflores.png"}}" alt="Plaza Las Flores">
         </section>
     </div>
     <div class="row 200%">
         <section class="6u 6u(medium) 12u$(small)">
-            <img src="assets/images/clientes/bbva.png" alt="">
+            <img src="{{asset "images/clientes/bbva.png"}}" alt="Bbbva Bancomer">
         </section>
         <section class="6u 6u(medium) 12u$(small)">
-            <img src="assets/images/clientes/iaepsa.png">
+            <img src="{{asset "images/clientes/iaepsa.png"}}" alt="Iaepsa">
         </section>
     </div>
 </div>
