@@ -1,0 +1,102 @@
+{{!< default}}
+{{! index template, this is for home.}}
+
+<!-- Sección ¿Quienes Somos? -->
+<section id="nosotros">
+	<h2 id="nosotrostitulo">¡Te ayudamos a realizar tú proyecto!</h2>
+    <div class="flex-container">
+        <div class="row around-xs">
+            <div class="col-xs-12 col-md-6 col-lg-6">
+                <div class="box">
+                    <img src="assets/images/hotel-389256_1280.jpg">
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-6">
+                <div class="box">
+                    <img src="assets/images/hotel-389256_1280.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="nosotrostexto">Somos una empresa innovadora en los procesos de DEMOLICIÓN, CONSTRUCCIÓN Y REMODELACIÓN  INTEGRAL, diseñando, creando, o implementando  procesos de innovación tecnológica ambientalmente sustentable para preservar el entorno, garantizando la calidad  y seguridad de todos los proyectos, reduciendo  tiempos, costos e impacto ambiental.
+    </p>
+</section>
+
+<section id="descripcion">
+	<h2 id="descripciontitulo">¡Con instaladores profesionales certificados!</h2>
+    <div class="flex-container">
+        <div class="row around-xs">
+            <div class="col-xs-12 col-md-6 col-lg-6">
+                <div class="box">
+                    <img src="assets/images/hotel-389256_1280.jpg">
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-6">
+                <div class="box">
+                    <img src="assets/images/hotel-389256_1280.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="descripciontexto">Aplicando la mejor tecnología y servicio para garantizar la calidad que tú mereces...</p>
+</section>
+
+<section id="contacto">
+	<BR>
+    <center><h2 id="contactotitulo">Contáctanos</h2></center>
+    <div class="flex-container">
+        <div class="row around-xs">
+            <div class="col-xs-12 col-lg-12">
+                <div class="box">
+                    <ul id="contactotexto">
+                        <li>¡¡¡Aceptamos tarjetas de crédito!!!</li>
+                        <li>Pregunta por la promoción del mes...</li>
+                        <li> -------------------------------------------</li>
+                        <li id="telefonos">nextel/Whatsapp: 43-25-76-39</li>
+                        <li>nextel/Whatsapp: 43-25-76-39</li>
+                        <li>Oficina: 58-67-11-88</li>
+                        <li>e-mail: grup.decore@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="servicios">
+	<br>
+		<h2 id="serviciostitulo">Servicios</h2>
+    <div class="flex-container">
+    <div class="row">
+        <div class="col-xs-6 col-lg-4">
+            <div class="box">
+                <img src="assets/images/construccion.png">
+                <a href="#" id="botones">Demolición</a>
+            </div>
+        </div>
+        <div class="col-xs-6 col-lg-4">
+            <div class="box">
+                <img src="assets/images/construccion.png">
+                <a href="#" id="botones">Construcción</a>
+            </div>
+        </div>
+        <div class="col-xs-6 col-lg-4">
+            <div class="box">
+                <img src="assets/images/construccion.png">
+                <a href="#" id="botones">Remodelación</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+</section>
+
+<br>
+
+
+<center>
+<h2 id="ofertastitulo">Nuestras ofertas</h2>
+</center>
+<div id="down" class="Container-Large">
+  {{> "loop"}}
+</div>
